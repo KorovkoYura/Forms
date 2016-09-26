@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test-task</title>
+	<link href="css/style.less" rel="stylesheet/less" type="text/css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/jquery.formstyler.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.1/less.min.js"></script>
+
+</head>
+<body>
+
+<section class="content">
+		
+	<form action="" id="myForm">
+
+	<div class="field">
+		<label for="weight">Вид изделия</label>
+		<input type="text" name="weight" id="weight" placeholder="15 г">
+	</div>
+
+	<div class="field">
+		<label for="hallmark">Проба металла</label>
+		<select name="hallmark" class="hallmark">
+			<option value="">585 проба</option>
+			<option value="">585 проба</option>
+			<option value="">585 проба</option>
+			<option value="">585 проба</option>
+			<option value="">585 проба</option>
+		</select>
+	</div>
+	
+	<div class="field">
+		<input type="checkbox" class="checkbox" id="checkbox">
+		<label for="checkbox">Камни и вставки</label>
+		<div class="text">
+		<p>Окончательная оценочная стоимость залога может отличаться от указанной в расчете</p>
+		</div>
+	</div>
+	
+	<div class="field">
+		<label for="plan">Тарифный план</label><span data-title = "Всплывающая подсказка"><img src="img/help.png" alt="help"></span>
+		<select name="plan" id="plan">
+			<option value="">"Простой"</option>
+			<option value="">"Простой"</option>
+			<option value="">"Простой"</option>
+			<option value="">"Простой"</option>
+			<option value="">"Простой"</option>
+		</select>
+	</div>
+
+	<div class="field">
+		<label for="status">Ваш дисконтный статус</label>
+		<select name="status" id="status">
+			<option value="">Без статуса</option>
+			<option value="">Без статуса</option>
+			<option value="">Без статуса</option>
+			<option value="">Без статуса</option>
+			<option value="">Без статуса</option>
+		</select>
+	</div>
+
+	<div class="field">
+		<label for="term">Срок кредитования<br> до продления</label>
+		<input type="range" name="range" min="1" max="30" step="1">
+		<output for="range" id="output" onforminput=" value = valueAsNumber;"></output>
+	</div>
+
+	<div class="field">
+		<input type="submit" value="Расчитать кредит">
+	</div>
+
+	</form>
+
+</section>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js" defer></script>
+	<script src="js/jquery.formstyler.min.js" defer></script>
+	<script src="js/script.js" defer></script>
+	
+</body>
+</html>
